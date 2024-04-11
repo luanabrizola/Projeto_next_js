@@ -1,9 +1,15 @@
-export default function DeatlhesProdutos({
-    params,
+type Props = {
+    params: {
+        productID: string
+    }
+}
 
-}: {
-    params:{produtosID: string};
+export const generalMetadata = ({ params }: Props): Metadata => {
+    return {
+        title: `Product ${params.productID}`, 
+    };
+};
 
-}){
-    return <h1>Detalhes dos produtos{params.produtosID}</h1>
+export default function DetalhesProdutos({ params }: Props) {
+    return <h1>Detalhes dos produtos {params.productID}</h1>; 
 }
