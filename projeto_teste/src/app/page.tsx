@@ -5,11 +5,6 @@ export default function Home() {
     <main className="">
       
       <h1>Olá munndo</h1>
-       
-    
-
- 
- 
-    </main>
+     </main>
   );
 }
